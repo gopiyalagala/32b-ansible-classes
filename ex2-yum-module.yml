@@ -1,0 +1,9 @@
+-
+ name: pb on use case of yum module
+ tasks: 
+  -name: code to install net-tools
+  yum:
+   name: net-tools
+   state: present
+
+
