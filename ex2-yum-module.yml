@@ -1,5 +1,6 @@
 -
  name: pb on use case of yum module
+ hosts: client1
  tasks: 
   - name: code to install net-tools
     yum:
