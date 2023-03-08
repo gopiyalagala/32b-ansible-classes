@@ -5,7 +5,7 @@
   - name: below code is yum installations using loops
     yum: 
      name: "{{item}}"
-     state: present
+      state: present
     with_items: 
     -git:
     -docker:  
