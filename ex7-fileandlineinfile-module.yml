@@ -2,16 +2,24 @@
  name: pb on use case of multiple modules
  hosts: all
  tasks:
-  - name: code to create folder
-    command: 
-     cmd: mkdir /opt/india
+  - name: code to create directory
+    file: 
+     path: /opt/india
+     state: directory
 
   - name: code to create a file
-    file:
+    file: 
      path: /opt/india/russia.txt
      state: touch
 
-  - name: code to write a message into a file   
-    copy: 
-     dest: /opt/india/russia.txt
-     content: 'HELLO WORLD'
+  - name: code to write content
+    lineinfile:
+     path: /opt/india/russia.txt
+     line: 'HELLO WORLD'   
+
+  - name: code to give permission
+    file: 
+     path: /opt/india/russia.txt
+     mode: utx
+
+
