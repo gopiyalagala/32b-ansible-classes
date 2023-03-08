@@ -1,0 +1,12 @@
+-
+ name: pb on use case of command module
+ hosts: all
+ tasks: 
+  - name: code to remove net-tools
+    command: 
+     cmd: yum remove net-tools -y
+
+  - name: code to start httpd service
+    command: 
+     cmd: service httpd start
+    
