@@ -4,7 +4,7 @@
  tasks: 
   - name: code to replace a word
     lineinfile: 
-     path: /opt/india/russia.text
+     path: /opt/india/russia.txt
      state: present 
      regexp: 'HELLO WORLD'
      line: 'India is Great'
