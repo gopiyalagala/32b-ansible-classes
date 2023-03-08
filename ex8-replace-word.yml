@@ -5,6 +5,6 @@
   - name: code to replace a word
     lineinfile: 
      path: /opt/india/russia.text
-     state: 
+     state: present 
      regexp: 'HELLO WORLD'
      line: 'India is Great'
