@@ -3,10 +3,10 @@
  hosts: all
  tasks: 
   - name: code to create a file
-    path: /opt/notes.txt
-    state: touch
+     path: /opt/notes.txt
+     state: touch
 
   - name: code to write message into a file
     copy: 
-    dest: /opt/notes.txt
-    content: 'Hello World'
+     dest: /opt/notes.txt
+     content: 'Hello World'
